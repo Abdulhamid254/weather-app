@@ -1,10 +1,26 @@
-
 "use client"
+
+import { Card, Divider, Subtitle, Text } from "@tremor/react";
 
 export default function Home() {
   return (
-    <main className="text-6xl" >
-     <h1>Lets Buid a chat-GPT-4</h1>
-    </main>
+    <div className="min-h-screen  bg-gradient-to-br from-[#394F68] to-[#183B7E] p-10 flex flex-col justify-center items-center " >
+     <Card className="bg-white max-w-4xl mx-auto">
+      <Text className="text-6xl font-bold text-center mb-10">Weather Forecast AI</Text>
+      <Subtitle className="text-xl text-center">
+        Powered By OpenAI, Next.js 13.3, Tailwind CSS, tREMOR 2.0 + 
+        More!
+      </Subtitle>
+
+      <Divider className="my-10"/>
+
+
+      <Card className="
+      bg-gradient-to-br from-[#394F68] to-[#183B7E]
+      ">
+        {/* City Picker */}
+      </Card>
+     </Card>
+    </div>
   )
 }
