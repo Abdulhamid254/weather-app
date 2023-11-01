@@ -5,7 +5,7 @@ type CurrentWeather {
   time: DateTime
   weathercode: Int
   winddirection: Int
-  windspeed: Int
+  windspeed: Float
 }
 
 type CurrentWeatherUnits {
