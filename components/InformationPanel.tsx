@@ -1,3 +1,4 @@
+
 import weatherCodeToString from "@/lib/weatherCodeToString";
 import CityPicker from "./CityPicker";
 import Image from "next/image";
@@ -15,7 +16,7 @@ function InformationPanel({ city, lat, long, results }: Props) {
     <div className="bg-gradient-to-br from-[#394F68] to-[#183B7E] text-white p-10">
       <div className="pb-5">
         {/* decodeURI removes the whitespaces such as percentages */}
-        <h1 className="text-6xl font-bold">{decodeURI(city)}</h1>
+        <h1 className="text-6xl font-bold mb-5">{decodeURI(city)}</h1>
         <p className="text-xs text-gray-400">
           Long/Lat: {long}, {lat}
         </p>
